@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { height: 100%; background: #0b1a24; color: #e6eef2; }
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #11222d; color: #e6eef2; }
+.leaflet-popup-content a { color: #7dd3fc; }
+.leaflet-container a.leaflet-popup-close-button { color: #9db3c0; }
+
+:focus-visible { outline: 2px solid #7dd3fc; outline-offset: 2px; }
