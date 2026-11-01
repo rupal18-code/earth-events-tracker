@@ -12,17 +12,6 @@ A live map of wildfires, severe storms, volcanoes, floods and other natural even
 - Loading, empty and error states with a retry button
 - Server-side API route that normalizes EONET data and caches it for 10 minutes
 
-## Run locally
-```bash
-npm install
-npm run dev
-```
-Open http://localhost:3000. EONET needs no API key.
-
-## Deploy on Vercel
-1. Push this folder to a GitHub repository.
-2. Go to vercel.com, choose **Add New > Project**, and import the repository.
-3. Keep the defaults (Framework: Next.js) and click **Deploy**.
 
 ## Project structure
 ```
