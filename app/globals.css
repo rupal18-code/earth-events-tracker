@@ -9,3 +9,7 @@ html, body { height: 100%; background: #0b1a24; color: #e6eef2; }
 .leaflet-container a.leaflet-popup-close-button { color: #9db3c0; }
 
 :focus-visible { outline: 2px solid #7dd3fc; outline-offset: 2px; }
+/* Darken the OpenStreetMap tiles (markers and popups are not affected) */
+.leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) brightness(0.95) contrast(0.9) saturate(0.6);
+}

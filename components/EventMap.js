@@ -15,11 +15,11 @@ export default function EventMap({ events, selectedId, onSelect }) {
   const markers = useRef({});
 
   // create the map once
-  useEffect(() => {
+    useEffect(() => {
     map.current = L.map(el.current, { minZoom: 2, worldCopyJump: true }).setView([20, 0], 2);
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
-      attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
-      maxZoom: 18,
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19,
     }).addTo(map.current);
     layer.current = L.layerGroup().addTo(map.current);
     return () => {
